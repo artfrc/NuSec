@@ -1,0 +1,112 @@
+Estudo de segurança da informação
+
+### INTRODUÇÃO ###
+
+Pilares:
+
+   confidencialidade:
+      saber quem está acessando e se é autorizado a acessar.
+   integridade:
+      dados alterados deve haver alertas que esses dados foram alterados.
+   disponibilidade:
+      os serviços devem estar sempre disponíveis para os usuários
+
+Oposto:
+   divulgação, alteração, negação (DAN)
+      Inverso da tríade CID.
+   
+   Solução: firewall (uma possível solução que pode ajudar)
+
+Autenticação: identificar e verificar alguma coisa.
+
+Autorização: controla o acesso dos recursos, uma área pode ter privilégios de acesso.
+
+Auditoria: manutenção de registros e rastrear atividades.
+
+Categorias:
+
+   infraestrutura crítica
+   segurança de aplicações
+   segurança de rede
+   sistema de IOT
+   segurança na nuvem
+   pessoas e processos.
+
+InfoSec: proteger informações
+   previnir, detectar e remediar ataques tanto digitatis e físicos
+
+Informações Threat Intelligence são: relevantes, acionáveis e contextuais
+
+### AGENTES DE AMEAÇAS ###
+
+   > Tipos de criminosos (agentes):
+
+   Explorador
+
+      encontrar os pontos fracos, querem apenas ser notados, usam muito phising (enganar pessoas para fornecerem informações pessoais), spear phising (email,tem um grupo específico alvo), vishing (mais por ligação).
+
+   Hacktivista
+
+      agem coletivamente por conta de uma causa comum entre eles;
+      Exemplo de ataque de negação de serviço (DDoS):
+      1. constroem um Botnet (servidor de comando e controle C&C, ponto central de todos os nós do botnet);
+      2. fazem um malware e assim que o servidor requisita, vários 'disparos' são feitos na entidade alvo, sobrecarregando-a e parando seus serviços.
+
+   Ciberterrorista
+
+      bem parecido com os Hacktivista, mas são mais agressivos, eles também possuem mais recursos e gostam de aplicar o spear phishing. Exemplo: Um atacante pode criar um e-mail que pareça vir do gerente de TI de uma empresa, informando sobre um problema urgente de segurança e solicitando que o usuário atualize suas credenciais de acesso em um link falso. 
+
+   Cibercriminoso
+
+      Querem dinheiro, usam phising (bem parecido com o spear phising, porém ele é menos personalizado, é um tipo de ataque mais geral, enquanto o spear é mais direcionado, aumentando as chancces de sucesso), roubo de identidades ou cartões de crédito e vendem no mercado negro. Utilizam também Ransomware, que é umm tipo de malware que bloqueia um computador e é liberado até que paguem para eles.
+
+
+   Ciberguerreiro
+
+      Motivados pelos interesses nacionais, sendo bem perigosos.
+
+   Categorias de Hackers:
+
+      Branco: ético
+
+      Preto: malicioso
+
+      Cinza: não é malicioso, mas também nem sempre é ético.
+
+      Azul: ético contratado por terceiros.
+
+   > Tipos de ameaças 
+
+      Vetor de ataque: método usado par invadir uma rede/sistema, como: explorar a vulnerabilidade, o mecanismo e o caminho dela. Exemplo: enivar email contendo um malware para alguém, se passando por seu amigo. vulnerabilidade é o usuário, mecanismo é o malware e o caminho é o email.
+
+      Caminho de ataque:  cadeia de eventos de quando os vetores de ataques são explorados.
+
+      Categorias:
+
+         1. Engenharia social: manipular pessoas.
+         2. Malware: software malicioso.
+         3. Acesso não autorizado: uma pessoa tentando entrar em algum lugar sem autorização (pode ser físico ou digital)
+         4. Falha no projeto do sistema: olhar uma pessoa digitando suas digitais, por exemplo.
+
+      Whale phishing: ataque direcionado  exatamente para uma pessoa de um cargo alto, para obter acesso a bd, por exemplo.
+
+      Threat Intelligence:
+
+         Entender o tipo de ameaça para saber lhe dar melhor com ela. Informações devem ser:
+            1. relevantes (impactam minha organização)
+            2. acionáveis (deve ter informações suficientes)
+            3. contextuais (informações suficientes para avaliar a ameaça).
+         
+         Common Vulnerability Scoring System (CVSS): medir a vulnerabilidade de um sistema.
+
+         Padrões de linguagem de ameaças: STIX, TAXII
+
+         Como usar:
+
+            1. Identificar as ameaças mais importantes a serem interrompidas.
+            2. Reunir as informações das ameaças.
+            3. Processar as informações.
+            4. Analisar e procurar indicadores de compromisso (IoC).
+            5. Divulgar as análises.
+            6. Implementar as lições aprendidas.
+            7. Volta no 1.
