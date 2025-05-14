@@ -110,3 +110,23 @@ Informações Threat Intelligence são: relevantes, acionáveis e contextuais
             5. Divulgar as análises.
             6. Implementar as lições aprendidas.
             7. Volta no 1.
+   
+   Estrutura de Ataque:
+      
+      Estágios:
+         1.Identificar situação
+         2. Classificar o problema
+         3. Analisar o impacto
+         4. Desenvolver estratégias
+
+      Ferramentas (Exemplos de modelos de ataques):
+         1. Cyber Kill Chain: esse modelo possui etapas, que são:
+            1.Reconhecimento: invasor coleta informações e possíveis vulnerabilidades.
+            2. Armamentização: criar carga útil, como um malware ou um cavalo de troia
+            3. Entrega: invasor entrega a carga útil ao alvo.
+            4. Exploração: usa a carga útil para obter acesso ao SO ou rede do alvo.
+            5. Instalação: estabelece uma posição estável no sistema, ou seja, mesmo que a carga útil seja descoberta, ele permanece no sistema.
+            6. Comando e controle: estabele uma comunicação no sistema, consegue acessar remotamente o sistema.
+            7. Exfiltração: extrai os dados.
+
+         2. MITRE ATT&CK: descreve uma série de técnicas de ataque e são listadas por categorias e também fornece uma linguagem para entender os ataques cibernéticos.
