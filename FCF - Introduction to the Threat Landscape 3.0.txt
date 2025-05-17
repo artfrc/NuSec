@@ -177,3 +177,56 @@ Informações Threat Intelligence são: relevantes, acionáveis e contextuais
       Fraude cibernética: engenharia social, malware e outro tipo de engano usado para fraude ou tirar vantagem.
 
       Golpes cibernéticos: tipo de fraude irrisório.
+
+### MALWARE ###
+
+   Worm é um vírus autoativado, ou seja, não precisa que o usuário o ative.
+   Ransomware nega que o usuário utilize algumas informações, normalmente criptografando elas.
+   Spyware relata o comportamento do usuário a terceiros.
+
+   Tipos de vírus:
+
+      Residente: infecta aplicações quando elas estão abertas.
+      Não residente: infecta arquivos e executáveis quando não estão em execução.
+      Multipartido: infecta muitos computadores e permanecem na memória do computador.
+      Ação direta: acessa a memória principal do computador e infecta todas as aplicações e arquivos.
+      Sequestrador de navegador: altera as configurações dos navegadores.
+      Sobrescrita: excluir e substituir dados em arquivos por seu próprio conteúdo.
+      Scripts da web: ataca a segurança do navegador web e injeta código malicioso.
+      File infector: substitui arquivos quando eles são abertos.
+      Rede: paralisa a rede e espalha para dispositivos conectados nela.
+      Setor de inicialização: tem como alvo o registro mestre de inicialização (MBR) e vai para a memória principal quando o computador é reiniciado.
+
+   Os vírus possuem três características:
+      1. precisa de um usuário para executar.
+      2. propaga-se injetando código em programas válidos.
+      3. pode espalhar para outros computadores e redes.
+
+   Outros tipos de malware:
+
+      são malwares, mas não são vírus, como:
+
+         Rootkit: coleção de software maliciosos que permite acesso a um computador que de uma outra forma não seria permitida.
+         Injeção de DDL: substitui arquivos DDL legítmos por arquivos maliciosos.
+         Manipulalção de driver: altera ou substitui o software de driver, isso permite que o SO se comunique com o hardware.
+         Adware: se esconde e exibe anúncios.
+         Dialer: contas telefônicas caras.
+         Inteligência artificial adversária: confundir uma rede neural.
+         Ransomware: criptografa e só é restaurado após pagar um valor.
+         Cavalo de troia: algo disfarçado.
+         Dropper: tipo de cavalo de troia para instalar um malware ou baixa o malware.
+         Rogueware/scareware: induz o usuário acreditar que há um vírus no computador e precisa pagar um software.
+         Malware de botnet: infecta um host por meio de um servidor de comando (C&C). Um computador infectado é um bot, um conjunto é um botnet.
+         Cryptojacking: uso ilegal de recursos de computadores para extrair criptomoedas.
+   
+   Métodos e vetores de ataques de Malware:
+
+      Vetor de ataque: método de ataque ou uma categoria de ataque, como a engenharia social, possui: vulnerabilidade, mecanismo e um caminho.
+      Uma superfície de ataque é o número total de pontos de entrada que o vetor cria para obter acesso não autorizado ao alvo, também pode-se dizer que é o alvo do ataque, essa superfície pode expandir ou contrair. Exemplo: uma pessoa sendo atacada, colocar capacete faz a superficie de ataque contrair, agora uma senha sendo a superfície de ataque, senhas fortes contrai a superfície, fracas expandem.
+
+      Exemplos de vetores de ataque de malware:
+         ataque watering hole:
+            vulnerabilidade é o usuário, caminho é o watering hole, mecanismo é o malware.
+         
+         Bot/Zumbi:
+            o atacante controla o computador usando um servdor de comando (C&C). 
