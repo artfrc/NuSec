@@ -58,7 +58,7 @@ Informações Threat Intelligence são: relevantes, acionáveis e contextuais
 
    Cibercriminoso
 
-      Querem dinheiro, usam phising (bem parecido com o spear phising, porém ele é menos personalizado, é um tipo de ataque mais geral, enquanto o spear é mais direcionado, aumentando as chancces de sucesso), roubo de identidades ou cartões de crédito e vendem no mercado negro. Utilizam também Ransomware, que é umm tipo de malware que bloqueia um computador e é liberado até que paguem para eles.
+      Querem dinheiro, usam phising (bem parecido com o spear phising, porém ele é menos personalizado, é um tipo de ataque mais geral, enquanto o spear é mais direcionado, aumentando as chancces de sucesso), roubo de identidades ou cartões de crédito e vendem no mercado negro. Utilizam também Ransomware, que é um tipo de malware que bloqueia um computador e é liberado até que paguem para eles.
 
 
    Ciberguerreiro
@@ -77,7 +77,7 @@ Informações Threat Intelligence são: relevantes, acionáveis e contextuais
 
    > Tipos de ameaças 
 
-      Vetor de ataque: método usado par invadir uma rede/sistema, como: explorar a vulnerabilidade, o mecanismo e o caminho dela. Exemplo: enivar email contendo um malware para alguém, se passando por seu amigo. vulnerabilidade é o usuário, mecanismo é o malware e o caminho é o email.
+      Vetor de ataque: método usado par invadir uma rede/sistema, como: explorar a vulnerabilidade, o mecanismo e o caminho dela. Exemplo: enivar email contendo um malware para alguém, se passando por seu amigo. Vulnerabilidade é o usuário, mecanismo é o malware e o caminho é o email.
 
       Caminho de ataque:  cadeia de eventos de quando os vetores de ataques são explorados.
 
@@ -158,3 +158,22 @@ Informações Threat Intelligence são: relevantes, acionáveis e contextuais
             Proteger: reconhecimento, armamentização, entrega e exploração.
 
       Estrutura de resposta a incidentes do NIST: detectar, responder e recuperar.
+
+### ENGENHARIA SOCIAL ###
+
+   Ato de manipular pessoas para adquirir vantagem.
+
+   Técnicas de engenharia social:
+       
+      -Phishing: é um spam malicioso enviado geralmente por email para um grupo muito grande. Tem algumas variações como:
+
+         Smishing: semelhante ao phishing, porém utiliza SMS;
+         Vishing: semelhante ao phishing, porém utiliza algum meio de comunicação por voz;
+         Spear phishing: Igual ao phising, porém direcionado a um grupo menor de pessoas, geralmente pessoas em um nível inferior em uma oraganização;   
+         Whale phishing: direcionado a um grupo específico de pessoas de alto escalão.
+
+   Fraudes golpes e campanhas de influência:
+
+      Fraude cibernética: engenharia social, malware e outro tipo de engano usado para fraude ou tirar vantagem.
+
+      Golpes cibernéticos: tipo de fraude irrisório.
