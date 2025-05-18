@@ -1,0 +1,19 @@
+FCF - Getting Started in Cybersecurity 3.0
+
+   Firewalls
+
+      Controlam o fluxo do tráfego das redes.
+
+      Sem estado/primeira geração: examina os pacotes da camadas de roteamento e transporte, como endereços de origem e destino, protocolos e números de portas. Irá definir quais pacotes são permitidos. Requer muitas configurações adicionais, usa FTP, ou seja é mais vulnerável.
+      
+      Com estado/segunda geração: possui 5-tuple (verifica o protocolo e o IP de origem) e verifica o estado da conexão, pacotes que não estão dentro das políticas do firewall será descartado. Não bloqueia pacotes não verificados (um problema), devido o HTTP usar sempre o mesmo número de porta para diversos serviços como conteúdo estático, comércio eletrônico, host de arquivo, aplicações web... O firewall não consegue distinguir
+
+      Terceira geração: entende os protocolos da camada de aplicação, logo entende protocolos como HTTP, FTP e DNS
+
+      Next generation: oferecer recursos de segurança em todas as áreas da rede, tendo segurança, confiabilidade e desempenho de rede. Possui vários pontos de segurança como em um aeroporto. Defesa de: 
+      primeira: analisa os pacotes.
+      segunda: verifica se não há um item malicioso nos pacotes (DPI: verifica códigos maliciosos e uso da rede, garante também que o formato dos dados estejam corretos.)
+      terceira linha: se um item for considerado suspeito o conteúdo é enviado para uma sandbox para ser feita uma análise desse item sem ter o risco de algum malware se espalhar pela rede.
+
+      Controle de acesso a rede:
+         
