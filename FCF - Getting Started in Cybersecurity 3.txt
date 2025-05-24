@@ -15,5 +15,31 @@ FCF - Getting Started in Cybersecurity 3.0
       segunda: verifica se não há um item malicioso nos pacotes (DPI: verifica códigos maliciosos e uso da rede, garante também que o formato dos dados estejam corretos.)
       terceira linha: se um item for considerado suspeito o conteúdo é enviado para uma sandbox para ser feita uma análise desse item sem ter o risco de algum malware se espalhar pela rede.
 
-      Controle de acesso a rede:
+      Controle de acesso a rede (NAC):
          
+         Máquina virtual que controla o acesso a uma rede.
+         Fluxo:
+            Dispositivo do cliente.
+
+            Autenticador: 
+               switch de rede
+               acesso sem fio
+               nome de usuário e senha
+               certificado digital
+
+            Servidor de autenticação
+
+         Recursos atuais do NAC:
+
+            Quando o MIS introduz o NAC na rede:
+               Cria perfis de todos os dispositivos conectados, então o NAC permite acesso com base no perfil do dispositivo.
+               Se um dispositivo é infectado por um malware, todos os outros dispositivos que ele se conecta pode ser infectado também.
+               Acesso temporário para convidados.
+               Pode-se integrar com outros produtos de segurnça.
+
+            Impotância do NAC:
+               Segurança aprimorada: supervisiona todos os dispositivos no momento em que entram na rede.
+               Economia de custo.
+               Automação: com um número muito grande de dispositivos e usuários é inviável checar manualmente, o NAC faz isso automaticamente.
+               Experiência de TI aperfeiçoadas.
+               Facilidade de controle.
