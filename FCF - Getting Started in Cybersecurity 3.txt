@@ -43,3 +43,60 @@ FCF - Getting Started in Cybersecurity 3.0
                Automação: com um número muito grande de dispositivos e usuários é inviável checar manualmente, o NAC faz isso automaticamente.
                Experiência de TI aperfeiçoadas.
                Facilidade de controle.
+
+         Sandbox:
+            sistema que confina as ações de uma aplicação. Testar se um software é seguro, joga ele numa sandbox, onde ele fica isolado e não irá infectar nada caso seja algomalicioso.
+
+            Ataque de dia zero: exploarar uma vulnerabilidade desconhecida.
+
+            Sandboxing: defesa contra ataques de dia zero.
+
+            Gerações:
+               Primeira: não conseguia compartilhar threat intelligence com outros dispositivos de segurança.
+               Segunda: melhorou o compartilhamento de threat intelligence, conseguindo compartilhar as informações até na nuvem, sendo possível mandar para outras redes.
+               Terceira: possui uma análise com um padrão de análise de ameaças devido a inteligência artificial, usa a linguagem MITREATT&CK
+
+         Web Application Firewall (WAF):
+            monitora tráfego HTTP e HTTPs bloqueando conteúdo malicioso (de e para a aplicação web).
+
+            Injeção de SQL:
+               Usar uma senha como '2+2=4' para que o banco de dados diga que é verdadeiro e permita o acesso.
+
+            Geração 2 do WAF: 
+               aprender o comportamento da aplicação para avaliar se as tentativas de acesso foram normais;
+               
+               monitoramento da sessão e heurística, que permitiu o firewall detectar variantes de assinaturas conhecidas.
+
+               Defesa contra DDoS, reputação de IP, antivirus, DLP (prevenção contra perda de dados)
+
+
+         Filtro seguro de Email (SEG - Secure email Gateway):
+            solução para proteger ameaças baseadas em email. Possui filtros de conteúdo, prevenção de perda de dados (DLP), evitando vazamento de dados.
+            Filtrar conteúdo:
+               correspondência de palavras-chave.
+               Expressões regulares.
+               Inspeções profundas.
+               Análise baseada no contexto.
+            
+            Filtros de spam:
+               endereços de remetentes suspeitos
+               uso excessivo de palavras-chave
+               padrões de spam conhecidos
+               endereços IP com má reputação
+            Tecnologias utilizadas:
+               filtros baysianos: estatístico, mede a probabilidade de ser um spam.
+               lista de negação: como uma blacklist.
+               lista de permissões: como uma whitelist.
+               algoritmos de aprendizagem de máquina: utiliza IA para fazer previsões ou decisões com base em dados, reconhecem padrões.
+
+            Estrutura de política do remetente (SPF):
+               verifica o IP do servidor do remetente;
+               evita falsificação de email e de endreço de remetente.
+
+         Filtros de conteúdo:
+            processo de filtrar/restringir conteúdo em emails ou páginas web.
+            Tipos:
+               filtros de mecanismo de pesquisa
+               de email
+               baseados em DNS: verificam as urls usando uma lista de bloqueio.
+               de web
