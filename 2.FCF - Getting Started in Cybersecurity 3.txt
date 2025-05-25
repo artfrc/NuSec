@@ -144,7 +144,7 @@ FCF - Getting Started in Cybersecurity 3.0
                garantir que servidores e desktops sejam corrigidos e tenham um antivírus atualizado instalados.
                Verificam versões de aoftware e firmware.
                Fazer varredura do sistema.
-               Aplicar proteção contrA perda de dados.
+               Aplicar proteção contra perda de dados.
 
             Detecção e resposta de endpoint (EDR)
                verificar IOC ou conexões e comportamentos supeitos.
