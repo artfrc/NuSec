@@ -100,3 +100,56 @@ FCF - Getting Started in Cybersecurity 3.0
                de email
                baseados em DNS: verificam as urls usando uma lista de bloqueio.
                de web
+
+         Wifi seguro
+            Protocolos de segurança:
+               Wired Equivalent Privacy (WEP)
+               Wifi protected Access (WAP)
+
+            Ataque evil twin é um tipo de ataque main-in-the-middle que são para roubar informações e se infiltrar em dispositivos.
+
+            Boas práticas para configurar uma rede wifi:
+               -alterar SSID e senha padrão.
+               -senha complexa e segurança ativa no roteador para croptografia.
+               -atualizar firmware do roteador.
+               -protocolo de segurança mais recente.
+               -detectar e supri APs não autorizados.
+               -criptografia forte.
+               -autenticação robusta.
+               - segmentar rede e convidados.
+               -lista de controle de acesso.
+               -monitorar rede.
+
+         Técnicas de hardening de endpoint
+            Categorias:
+               1.controles administrativos
+                  senhas, restrições de usuários, etc.
+
+               2.proteção de endpoint local
+                  segurança e criptografia de disco.
+                  proteção contra perca de dados (DLP- Data Loss Provention)
+
+               3.manutenção de endpoint
+                  patches/atualizações automáticas, verificação de política, backups.
+
+               4. monitoramento de endpoint
+                  EPP - Endpoint Protection Plataform
+                  IDS - Intrusion Detection System
+                  EDR - Endpoint Detection and Response
+
+            Aplicar criptografia completa de disco é uma técnica de hardening de endpoint que é bom aplicar em notenook BYOD.
+
+         Monitoramento de endpoint
+            Plataforma de proteção de endpoint (EPP)
+               garantir que servidores e desktops sejam corrigidos e tenham um antivírus atualizado instalados.
+               Verificam versões de aoftware e firmware.
+               Fazer varredura do sistema.
+               Aplicar proteção contrA perda de dados.
+
+            Detecção e resposta de endpoint (EDR)
+               verificar IOC ou conexões e comportamentos supeitos.
+               utiliza IA e grandes BD.
+               envia alertas para outros endpoints para bloquear algum software.
+
+            Dispositivos BYOD: modelo onde funcionários trabalham com seu próprio dispositivo.
+            Princípio do privilégio mínimo: isolar os dispositivos em uma rede separada até que tenha segurança.
