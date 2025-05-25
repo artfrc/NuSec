@@ -142,7 +142,7 @@ FCF - Getting Started in Cybersecurity 3.0
          Monitoramento de endpoint
             Plataforma de proteção de endpoint (EPP)
                garantir que servidores e desktops sejam corrigidos e tenham um antivírus atualizado instalados.
-               Verificam versões de aoftware e firmware.
+               Verificam versões de software e firmware.
                Fazer varredura do sistema.
                Aplicar proteção contra perda de dados.
 
