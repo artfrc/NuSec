@@ -153,3 +153,16 @@ FCF - Getting Started in Cybersecurity 3.0
 
             Dispositivos BYOD: modelo onde funcionários trabalham com seu próprio dispositivo.
             Princípio do privilégio mínimo: isolar os dispositivos em uma rede separada até que tenha segurança.
+
+         SOAR (Orquestração, automação e resposta de segurança) - (Security orchestration, automation and response)
+            Conecta todas as ferramentas de segurança em fluxos de trabalho definidos que podem ser executados automaticamente, aumentando a eficácia da equipe de segurança ao automatizar processos repetitivos
+            Guias estratégicos: automatizar as ações que um analista normalmente executaria manualmente
+               - executam tarefas repetitivas
+               - pausam quando supervisão humana é necessária
+               - reduz carga de trabalho do analista e chances de erro
+               - investigação de phising
+               - etapas iniciais da investigação são feitas automaticamente
+               - exclui/envia emails automaticamente
+               - fornece dicas
+
+
