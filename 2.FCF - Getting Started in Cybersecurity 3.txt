@@ -165,4 +165,19 @@ FCF - Getting Started in Cybersecurity 3.0
                - exclui/envia emails automaticamente
                - fornece dicas
 
-
+         SIEM (Security information and event management) - (Gerenciamento e informações de segurança)
+            Analisa alertas de segurança em tempo real.
+            Coleta, normaliza e armazena eventos e alertas da rede e de dispositivos da organização (local ou  nuvem).
+            Monitoramento de anomalias comportamentais do usuário.
+            Observação de indicadores de compromisso conhecidos (IOC).
+            Aplicação de modeloa sofisticados de aprendizado de máquina.
+            Razões para SIEM: 
+               - segurança melhorada, investimento e conformidade regulatória.
+               - equipes descobriam ataques após meses.
+               - recursos de detecção de ameaças com threat intelligence.
+               - aprendizado de máquina.
+               - análise do comportamento do usuário (UEBA - User and Entity Behavior analytics).
+            Complexidade:
+               - demanda por recursos de TI escassos.
+               - maior chance de erro humano.
+               - visibilidade reduzida da segurança da rede.

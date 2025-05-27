@@ -77,7 +77,7 @@ Informações Threat Intelligence são: relevantes, acionáveis e contextuais
 
    > Tipos de ameaças 
 
-      Vetor de ataque: método usado par invadir uma rede/sistema, como: explorar a vulnerabilidade, o mecanismo e o caminho dela. Exemplo: enivar email contendo um malware para alguém, se passando por seu amigo. Vulnerabilidade é o usuário, mecanismo é o malware e o caminho é o email.
+      Vetor de ataque: método usado para invadir uma rede/sistema, como: explorar a vulnerabilidade, o mecanismo e o caminho dela. Exemplo: enivar email contendo um malware para alguém, se passando por seu amigo. Vulnerabilidade é o usuário, mecanismo é o malware e o caminho é o email.
 
       Caminho de ataque:  cadeia de eventos de quando os vetores de ataques são explorados.
 
