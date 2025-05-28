@@ -198,3 +198,15 @@ FCF - Getting Started in Cybersecurity 3.0
                - 3. necessidade de uma infraestrutura de segurança unificada.
 
             Secure SD-WAN: combinação de funções de firewall e SD-WAN em um único dispositivo, proporcionando maior segurança e simplificando a tarefa do administrador de rede.
+
+            Maneiras pelas quais a SD-WAN economiza dinheiro para uma organização e otimiza o desempenho do tráfego de rede:
+               Reserva links caros de alta velocidade para aplicações vitais para negócios.
+               Permite o roteamento de tráfego com reconhecimento da aplicação.
+
+            Benefícios que você obtém ao usar um console de gerenciamento centralizado SD-WAN:
+               Capacidade de priorizar aplicações vitais para negócios
+
+            Motivos pelos quais as organizações estão migrando da arquitetura WAN tradicional para a arquitetura SD-WAN:
+               Uma maior dependência de aplicações baseadas em nuvem.
+               Uma força de trabalho remota em expansão.
+
