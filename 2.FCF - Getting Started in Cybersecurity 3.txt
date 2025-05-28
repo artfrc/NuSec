@@ -181,3 +181,20 @@ FCF - Getting Started in Cybersecurity 3.0
                - demanda por recursos de TI escassos.
                - maior chance de erro humano.
                - visibilidade reduzida da segurança da rede.
+
+         SD-WAN
+            Tecnologia de rede que usa software para gerenciar e otimizar uma rede de área ampla (WAN). Simplifica o gerenciamento da WAN, permitindo que empresas conectem filiais, datacenters e nuvem de forma mais eficiente e flexível, também monitora o desempenho das conexões WAN.
+            Vantagens em relação a WAN tradicional:
+               - orquestração centralizada: administradores podem modificar regras de segurança em tempo real, ajudando reduzir a complexidade.
+               - acesso direto à nuvem: elimina a necessidade de backhul (tráfego da rede para um data center centralizado (geralmente na matriz da empresa) antes de ir para a internet ou nuvem).
+               - melhor desempenho de aplicações.
+               - maior agilidade de negócios.
+               - economia de custos.
+               - segurança aprimorada.
+
+            Estágios:
+               - 1. necessidade de maior largura de banda: solução foi adicionar vários links de operadora dedicados e balanceamento de carga.
+               - 2. necessidade de alto desempenho: atrasos reduzidos, simplificação dos processos operacionais.
+               - 3. necessidade de uma infraestrutura de segurança unificada.
+
+            Secure SD-WAN: combinação de funções de firewall e SD-WAN em um único dispositivo, proporcionando maior segurança e simplificando a tarefa do administrador de rede.
