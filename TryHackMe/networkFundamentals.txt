@@ -1,7 +1,5 @@
 Networks Fundamentals
 
-[ENGLISH]
-
    Two ways of being identified a device on a network:
    - IP Address
    - A media Access Control (MAC) Address
@@ -46,7 +44,7 @@ Networks Fundamentals
       Ping uses ICMP (Internet Control Message Protocol) packets to determine the performance of a connection between devices, for example, if the connection exists or is reliable.
       The time taken for ICMP packets travelling between devices is measured by ping, such as in the screenshot below. This measuring is done using ICMP's echo packet and then ICMP's echo reply from the target device.
 
-   Local Area Network (LAN) Topologies
+   Introdcing Local Area Network (LAN) Topologies
       Star Topology
          The main of a star a topology is that are individually connected via a central networking device such as switch or hub. Is very commonly because of its reability and scability - despite the cost.
          Any information sent to device in this topology is sent via the central device.
@@ -60,72 +58,34 @@ Networks Fundamentals
          Devices such computers are connected directy each other to form a loop, wih less cables and dependence on dedicated hardware syck within a star topology.If the device happens to have data to sendm it will send its own data first before sending data from another device.
          The fail of a cable will result the entire networking breaking.
 
+   A primer on subnetting
+      Subnetting is a term given to splitting up a network into smaller, miniature networks within itself.
+      Forms  to use a subnet:
+      - identify the network address:
+         This address identifies the start of the actual network and is used to identify a network's existence.
+         For example, a device with the IP address of 192.168.1.100 will be on the network identified by 192.168.1.0.
 
-[PORTUGUESE]
+      - identify the host address
+         An IP address here is used to identify a device on the subnet.
+         For example, a device will have the network address of 192.168.1.1.
+      - identify the default gateway
+         The default gateway address is a special address assigned to a device on the network that is capable of sending information to another network.
+         Any data that needs to go to a device that isn't on the same network (i.e. isn't on 192.168.1.0) will be sent to this device. These devices can use any host address but usually use either the first or last host address in a network (.1 or .254).
 
-   Fundamentos de Redes
+   Address Resolution Protocol - ARP
+      Technology that is responsible for allowing devices to identify themselves on a network.
+      Simply, ARP allows a device to associate its MAC address with an IP address on the network. Each device on a network will keep a log of the MAC addresses associated with other devices.
+      Devices can use ARP to find the MAC address (and therefore the physical identifier) of a device for communication.
+      Each device within a network has a ledger to store information on, which is called a cache. In the context of ARP, this cache stores the identifiers of other devices on the network.
+      In order to map these two identifiers together (IP address and MAC address), ARP sends two types of messages:
 
-   Duas maneiras de identificar um dispositivo em uma rede:
+      ARP Request, ARP Reply
 
-      - Endereço IP
-      - Endereço de Controle de Acesso à Mídia (MAC)
+      When an ARP request is sent, a message is broadcasted on the network to other devices asking, "What is the mac address that owns this IP address?" When the other devices receive that message, they will only respond if they own that IP address and will send an ARP reply with its MAC address. The requesting device can now remember this mapping and store it in its ARP cache for future use.
 
-   Endereço IP:
-
-      Octeto 1     Octeto 2     Octeto 3     Octeto 4
-      192.         168.         1.           1
-      0-255        0-255        0-255        0-255
-
-      O endereço IP pode mudar de dispositivo para dispositivo, mas não pode estar ativo simultaneamente mais de uma vez dentro da mesma rede.
-      Os endereços IP seguem um conjunto de padrões conhecidos como protocolos. Esses protocolos são a espinha dorsal da rede e forçam muitos dispositivos a se comunicarem na mesma linguagem.
-      No entanto, devemos lembrar que os dispositivos podem estar tanto em uma rede privada quanto em uma pública.
-      Dependendo de onde estiverem, isso determinará que tipo de endereço IP possuem: um endereço IP público ou privado.
-
-      Aqui temos dois dispositivos em uma rede privada:
-
-      Nome do Dispositivo     Endereço IP        Tipo de Endereço IP
-      DESKTOP-KJE57FD         192.168.1.77       Privado
-      DESKTOP-KJE57FD         86.157.52.21       Público
-      CMNatic-PC              192.168.1.74       Privado
-      CMNatic-PC              86.157.52.21       Público
-
-      DESKTOP-KJE57FD - MAC: EC:5C:68:C3:7E:51
-      CMNatic-PC:     - MAC: 50:3E:AA:E8:3B:64
-
-      Esses dois dispositivos poderão usar seus endereços IP privados para se comunicarem entre si.
-      No entanto, qualquer dado enviado à Internet por qualquer um desses dispositivos será identificado pelo mesmo endereço IP público.
-      Os endereços IP públicos são fornecidos pelo seu Provedor de Serviços de Internet (ou ISP) mediante uma taxa mensal (sua conta!).
-
-      A Cisco, uma gigante da indústria no mundo das redes, estimou que haveria aproximadamente 50 bilhões de dispositivos conectados à Internet até o final de 2021. (Cisco., 2021).
-      Entra aqui a questão das versões de endereços IP.
-      Até agora, discutimos apenas uma versão do esquema de endereçamento do Protocolo de Internet conhecida como IPv4, que usa um sistema de numeração de 2^32 endereços IP (4,29 bilhões) — por isso você pode perceber por que há tanta escassez!
-
-      O IPv6 é uma nova iteração do esquema de endereçamento do Protocolo de Internet para ajudar a resolver esse problema.
-      Embora pareça mais intimidador, ele oferece alguns benefícios:
-
-      - Suporta até 2^128 endereços IP (mais de 340 trilhões), resolvendo os problemas enfrentados com o IPv4
-      - Mais eficiente devido a novas metodologias
-
-      Exemplo de IPv6: 2a00:22c4:a531:c500:425f:cce6:c36b:f64d
-      Exemplo de IPv4: 86.157.52.21
-
-   Endereço MAC:
-
-      Os dispositivos em uma rede possuem todos uma interface física de rede, que é uma placa microchip encontrada na placa-mãe do dispositivo.
-      Essa interface de rede recebe um endereço único na fábrica onde foi fabricada, chamado de endereço MAC (Controle de Acesso à Mídia).
-      O endereço MAC é um número hexadecimal de doze caracteres (um sistema de numeração de base dezesseis usado em computação para representar números) dividido em pares e separados por dois pontos.
-      Esses dois pontos são considerados separadores.
-      Por exemplo: a4:c3:f0:85:ac:2d.
-      Os seis primeiros caracteres representam a empresa que fabricou a interface de rede, e os últimos seis são um número exclusivo.
-
-      No entanto, algo interessante sobre os endereços MAC é que eles podem ser falsificados ou "spoofados" em um processo conhecido como spoofing.
-      Esse spoofing ocorre quando um dispositivo em rede finge se identificar como outro usando o endereço MAC dele.
-      Quando isso ocorre, pode muitas vezes quebrar projetos de segurança mal implementados que assumem que os dispositivos que se comunicam em uma rede são confiáveis.
-
-      Considere o seguinte cenário:
-      Um firewall está configurado para permitir qualquer comunicação que vá para e venha do endereço MAC do administrador.
-      Se um dispositivo fingir ou "spoofar" esse endereço MAC, o firewall pensará que está recebendo comunicação do administrador, quando na verdade não está.
-
-   Ping
-      O Ping utiliza pacotes ICMP (Internet Control Message Protocol) para verificar o desempenho de uma conexão entre dispositivos, por exemplo, se a conexão existe ou é estável.
-      O tempo que os pacotes ICMP levam para trafegar entre os dispositivos é medido pelo ping, como na captura de tela abaixo. Essa medição é feita usando o pacote de echo do ICMP e, em seguida, a resposta de echo reply do dispositivo de destino.
+   Dynamic Host Configuration Protocol - DHCP
+      A IP address can be assigned either manually or automatically and most commonly by using a DHCP server. If a device not already been manually IP, it sends out a request to see if any DHCP server are on network. A communication is established and a IP is generated for device. Look:
+      DHCP discover: is there anyone who can give me an IP Addres?
+      DHCP Offer: sure, you can have 192.168.1.10
+      DHCP Request: thank you! I'll start using.
+      DHCP Ack: Ok, can use that IP for the next 24 hours.
