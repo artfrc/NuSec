@@ -11,7 +11,7 @@ Networks Fundamentals
       0-255       0-255       0-255    0-255
 
       IP Addres can change from device to device but cannot be active simultaneously more than once within the same network.
-      IP Addresses follow a set of standards known as protocols. These protocols are the backbone of networking and force many devices to communicate in the same language. However, we should recall that devices can be on both a private and public network. Depending on where they are will determine what type of IP address they have: a public or private IP address.
+      IP Address follow a set of standards known as protocols. These protocols are the backbone of networking and force many devices to communicate in the same language. However, we should recall that devices can be on both a private and public network. Depending on where they are will determine what type of IP address they have: a public or private IP address.
       Here we have two devices on a private network:
 
       Device Name       IP Address        IP Address Type
@@ -89,3 +89,24 @@ Networks Fundamentals
       DHCP Offer: sure, you can have 192.168.1.10
       DHCP Request: thank you! I'll start using.
       DHCP Ack: Ok, can use that IP for the next 24 hours.
+
+   Open Systems Interconnection Model - OSI Model
+      This model provides a framework ditactating how all devices will send, receive and interpret data.
+      Layers:
+      1. Physical:
+         Components of the hardware. Devices use eletrical signals to transfer signals data between each other in binary. 
+         E.g: ethernet cables.
+
+      2. Data link:
+         Focuses on the physical addressing of the transmition, receive a packet the network layer (including the IP address) and adds in the physical MAC address. Inside every network-enabled computer is a Network Interface Card (NIC) which comes with a unique MAC address to identify it. Additionally, it’s also the job of the data link layer to present the data in a format suitable for transmission.
+
+      3. Network
+
+      
+      4. Transport
+      
+      5. Session
+      
+      6. Presentation
+      
+      7. Application
