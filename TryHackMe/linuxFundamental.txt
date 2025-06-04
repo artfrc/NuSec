@@ -1,17 +1,20 @@
-Some commands:
+Basic Output Commands:
+- echo: echo Hello - print Hello
+- whoami: print the current user
+- pwd: print working directory
 
-- echo > echo Hello > print Hello 
-- whoami > print the current user
-- ls > listen all files in current directory
-- cd > change directory
-- pwd > print working directory
-- cat > concatenate (print content of file)
-- find
-   find -name filename.txt > If we remember the filename, we can simply use find -name passwords.txt where the command will look through every folder in our current directory.
+File and Directory Navigation:
+- ls: list all files in the current directory
+- cd: change directory
 
-- grep
-   The grep command allows us to search the contents of files for specific values that we are looking for.
-   grep "someone text" filename
+File Content Operations:
+- cat: concatenate (print content of file)
+- grep: The grep command allows us to search the contents of files for specific values that we are looking for.
+  grep "some text" filename
 
-- wc
-   Using "wc" to count the number of entries.
+File Search:
+- find: 
+  find -name filename.txt: If we remember the filename, we can use find -name passwords.txt, where the command will look through every folder in the current directory.
+
+File Analysis:
+- wc: Using "wc" to count the number of entries.
