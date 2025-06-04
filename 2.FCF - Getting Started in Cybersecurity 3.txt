@@ -209,4 +209,64 @@ FCF - Getting Started in Cybersecurity 3.0
             Motivos pelos quais as organizações estão migrando da arquitetura WAN tradicional para a arquitetura SD-WAN:
                Uma maior dependência de aplicações baseadas em nuvem.
                Uma força de trabalho remota em expansão.
+         
+         Acesso a rede Zero Trust (ZTNA)
+            ZTNA: sessão segura entre uma entidade e uma rede.
+            Como funciona:
+               Validação:
+                  1. endpoint se conecta ao proxy de acesso ZTNA.
+                  2. Fortigate desafia o endpoint para identificação do dispositivo.
+                  3. certificado enviado para o Fortigate.
+                  4.Fortigate aplica regras e tags ao dispositivo.
+               
+               Autenticação:
+                  1. usuário insere credenciais.
+                  2. Fortigate envia credenciais para um servidor de autenticação.
+                  3. identidade do usuário é validada e seus privilégios também recuperados.
 
+               Sessão criptografada:
+                  usuário está com acesso a essa sessão.
+
+            Zero trust: 
+               - funcionários possuem privilégios mínimos para fazerem seu trabalho.
+               - túneis criptografados.
+               - recursos ocultos.
+
+         Segurança na nuvem
+            Virtualização: um único servidor executa a aplicação de vários servidores ao mesmo tempo.
+            Ao invés de uma empresa usar seu próprio hardware, grandes empresários montaram grandes datacenters com muitos hardwares,então as empresas colocam seus softwares para rodar nesses hardwares que não são deles, isso é a nuvem.
+
+         Infraestrutura como serviço (IaaS)
+            Organização utiliza este serviço na nuvem quando a demanda por seus serviços ou produtos varia, como por exemplo, em feriados.
+            Provedor de serviços fornecem rede, armazenamento, servidores físicos, virtualização.
+            Organizações fornecem sistema operacional, middleware, dados, aplicações.
+
+         Software como serviço (SaaS)
+            Software é hospedado por terceiros.
+
+         Plataforma como serviço (PaaS)
+            Serviço na nuvem aluga plataformas baseadas na nuvem para desenvolvedores de software desenvolverem e entregarem aplicações.
+
+      Borda de serviço de acesso seguro (SASE)
+         Fornecido por meio da nuvem que oferece suporte ao acesso seguro das redes empresariais e distribuídas.
+         
+         - segurança  fexível e consistente: usa ZTNA e DLP 
+         - custos e complexidade de TI reduzidos
+         - experiência do usuário perfeita: redução de latência
+
+         Recursos:
+            1. rede de longa distância definida por software (SD-WAN)
+               direciona o tráfego de forma mais inteligentes para rotas mais eficientes
+            
+            2. Securate web gateway (SGW)
+               filtra malware, evita perdas de dados na internet.
+            
+            3. Firewall como serviço (FWaaS)
+            
+            4. Agente de segurança de acesso à nuvem (CASB)
+               protege aplicações em nuvem.
+
+            5. Acesso de rede Zero Trust (ZTNA)
+               acesso seguro a aplicações para usuários remotos, qualquer acesso é verificado antes de conceder acesso.
+
+            6. Gerenciamento centralizado
