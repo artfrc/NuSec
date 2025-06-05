@@ -1,17 +1,48 @@
-Some commands:
+Basic Output Commands:
+- echo: echo Hello - print Hello
+- whoami: print the current user
+- pwd: print working directory
 
-- echo > echo Hello > print Hello 
-- whoami > print the current user
-- ls > listen all files in current directory
-- cd > change directory
-- pwd > print working directory
-- cat > concatenate (print content of file)
-- find
-   find -name filename.txt > If we remember the filename, we can simply use find -name passwords.txt where the command will look through every folder in our current directory.
+File and Directory Navigation:
+- ls: list all files in the current directory
+- cd: change directory
 
-- grep
-   The grep command allows us to search the contents of files for specific values that we are looking for.
-   grep "someone text" filename
+File Content Operations:
+- cat: concatenate (print content of file)
+- grep: The grep command allows us to search the contents of files for specific values that we are looking for.
+  grep "some text" filename
 
-- wc
-   Using "wc" to count the number of entries.
+File Search:
+- find: 
+  find -name filename.txt: If we remember the filename, we can use find -name passwords.txt, where the command will look through every folder in the current directory.
+
+File Analysis:
+- wc: Using "wc" to count the number of entries.
+
+File System Interaction:
+- touch: create a new empty file
+- mkdir: create a new directory
+- cp: copy files or directories
+- mv: move or rename files or directories
+- rm: remove files or directories
+- file: determine the type of a file
+
+Operators:
+- &: This operator allows you to run commands in the background of your terminal.
+- &&: This operator allows you to combine multiple commands together in one line of your terminal.
+- >: This operator is a redirector, meaning that we can take the output from a command (such as using cat to output a file) and direct it elsewhere.
+- >>: This operator does the same function as the > operator but appends the output rather than replacing (meaning nothing is overwritten).
+
+Secure Shell (SSH):
+- ssh: Secure Shell or SSH is a protocol for secure communication between devices in an encrypted form. Using cryptography, any input we send in a human-readable format is encrypted for traveling over a network, where it is then unencrypted once it reaches the remote machine.
+  ssh {user}@{IP}: Use the ssh command to access a virtual machine.
+
+Permissions:
+- ll: list files with detailed permissions (alias for ls -l)
+- ls -l: list files with detailed permissions
+- su {user}: switch to another user account
+
+Common Directories:
+- /etc: This root directory is one of the most important on your system. The etc folder (short for etcetera) is a common location to store system files used by your operating system. For example, the sudoers file contains a list of users and groups that have permission to run sudo or a set of commands as the root user. The passwd and shadow files store user passwords in encrypted format (sha512).
+- /var: The /var directory, with "var" being short for variable data, is one of the main root folders found on a Linux install. This folder stores data that is frequently accessed or written by services or applications running on the system, such as log files (/var/log) or other data not necessarily associated with a specific user (e.g., databases).
+- /tmp: This is a unique root directory found on a Linux install. Short for "temporary," the /tmp directory is volatile and used to store data that is only needed to be accessed once or twice. Similar to the memory on your computer, once the computer is restarted, the contents of this folder are cleared out. In pentesting, this folder is useful because any user can write to it by default, making it a good place to store enumeration scripts once access to a machine is gained.
