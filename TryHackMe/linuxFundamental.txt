@@ -46,3 +46,50 @@ Common Directories:
 - /etc: This root directory is one of the most important on your system. The etc folder (short for etcetera) is a common location to store system files used by your operating system. For example, the sudoers file contains a list of users and groups that have permission to run sudo or a set of commands as the root user. The passwd and shadow files store user passwords in encrypted format (sha512).
 - /var: The /var directory, with "var" being short for variable data, is one of the main root folders found on a Linux install. This folder stores data that is frequently accessed or written by services or applications running on the system, such as log files (/var/log) or other data not necessarily associated with a specific user (e.g., databases).
 - /tmp: This is a unique root directory found on a Linux install. Short for "temporary," the /tmp directory is volatile and used to store data that is only needed to be accessed once or twice. Similar to the memory on your computer, once the computer is restarted, the contents of this folder are cleared out. In pentesting, this folder is useful because any user can write to it by default, making it a good place to store enumeration scripts once access to a machine is gained.
+
+Dowloading files (wget)
+   For example, if I wanted to download a file named "myfile.txt" onto my machine, assuming I knew the web address it -- it would look something like this: wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
+
+Transfering files from your host - SCP (SSH)
+   Secure copy, or SCP, is just that -- a means of securely copying files. Unlike the regular cp command, this command allows you to transfer files between two computers using the SSH protocol to provide both authentication and encryption.
+
+   Working on a model of SOURCE and DESTINATION, SCP allows you to:
+
+      - Copy files & directories from your current system to a remote system
+      - Copy files & directories from a remote system to your current system
+
+   Example:
+      The IP address of the remote system 	192.168.1.30
+      
+      User on the remote system	            ubuntu
+      
+      Name of the file on the local system	important.txt
+      
+      Name that we wish to store the file 
+      as on the remote system	               transferred.txt
+
+      scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt
+
+      The command copies the file important.txt from the local computer to the /home/ubuntu/ directory on the remote computer 192.168.1.30, renaming it to transferred.txt, using a secure SSH connection.
+
+And now let's reverse this and layout the syntax for using scp to copy a file from a remote computer that we're not logged into 
+
+   IP address of the remote system	         192.168.1.30
+
+   User on the remote system	               ubuntu
+
+   Name of the file on the remote system	   documents.txt
+
+   Name that we wish to store the file 
+   as on our system	                           notes.txt
+
+   scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt
+
+Serving Files From Your Host - WEB
+
+   Ubuntu machines come pre-packaged with python3. Python helpfully provides a lightweight and easy-to-use module called "HTTPServer". This module turns your computer into a quick and easy web server that you can use to serve your own files, where they can then be downloaded by another computing using commands such as curl and wget. 
+      python3 -m http.server
+      Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+      
+   Python3's "HTTPServer" will serve the files in the directory where you run the command, but this can be changed by providing options that can be found within the manual pages. Simply, all we need to do is run python3 -m  http.server in the terminal to start the module.
+   After use wget to download file: wget http://MACHINE_IP:8000/myfile
