@@ -74,11 +74,11 @@ Transfering files from your host - SCP (SSH)
 
 And now let's reverse this and layout the syntax for using scp to copy a file from a remote computer that we're not logged into 
 
-   IP address of the remote system	         192.168.1.30
+   IP address of the remote system	            192.168.1.30
 
-   User on the remote system	               ubuntu
+   User on the remote system	                  ubuntu
 
-   Name of the file on the remote system	   documents.txt
+   Name of the file on the remote system	      documents.txt
 
    Name that we wish to store the file 
    as on our system	                           notes.txt
@@ -93,3 +93,26 @@ Serving Files From Your Host - WEB
       
    Python3's "HTTPServer" will serve the files in the directory where you run the command, but this can be changed by providing options that can be found within the manual pages. Simply, all we need to do is run python3 -m  http.server in the terminal to start the module.
    After use wget to download file: wget http://MACHINE_IP:8000/myfile
+
+Process 101
+
+- ps: view  a list of the running process as our user's session.
+- ps aux: To see the processes run by other users and those that don't run from a session.
+- top: gives you real-time statistics about the processes running on your system instead of a one-time view.
+- kill: command and the associated PID that we wish to kill.
+
+Below are some of the signals that we can send to a process when it is killed:
+
+   - SIGTERM - Kill the process, but allow it to do some cleanup tasks beforehand
+   - SIGKILL - Kill the process - doesn't do any cleanup after the fact
+   - SIGSTOP - Stop/suspend a process
+
+Getting Processes/Services to Start on Boot (systemctl)
+systemctl [option] [serivice], example:
+- systemctl start apache
+- systemctl stop apache
+- systemctl enable apache
+- systemctl disable apache
+
+
+
