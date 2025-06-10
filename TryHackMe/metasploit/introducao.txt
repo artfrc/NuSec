@@ -1,0 +1,39 @@
+Metasploit
+
+msfconsole
+
+Ferramenta para pesquisas de vulnerabilidades útil para testes de penetração.
+
+Componentes:
+msfconsole: interface de linha de comando
+módulos: pequenos componentes dentro do Metasploit Framework que são criados para executar uma tarefa específica, como explorar uma vulnerabilidade, escanear um alvo ou executar um ataque de força bruta.
+ferramenatas.
+
+exploit: pedaço de código que usa uma vulnerabilidade presente no sistema.
+payload: código que será executado no sistema alvo para obter um resultado.
+
+módulos: /opt/metasploit-framework/embedded/framework/modules/
+- auxiliar: scanners (varreduras), crawlers (recursos ocultos), fuzzers(dados aleatórios), etc.
+- codificadores: códigos para serem executados, antivírus...
+- evasão: mais recomendável que codificadores para burlar antivírus.
+- explorações
+
+shell
+
+EternalBlue: exploit para vuln em server SMBv1 windows. 
+	use exploit/windows/smb/ms17_010_eternalblue
+	show payloads
+	back
+
+Info: informações detalhadas do módulo
+	info use exploit/windows/smb/ms17_010_eternalblue
+
+Search: 
+	search ms17-010
+	search type:auxiliary telnet
+
+SMB: share files, envio para impressora, windows.
+
+set
+setg
+unset
