@@ -37,3 +37,25 @@ SMB: share files, envio para impressora, windows.
 set
 setg
 unset
+
+### Exploaração
+no metasploit temos diversos módulos de scanners de portas, pesquisar com: 
+	search portscan
+	veja as opções necessárias com:
+		show options
+
+nmap -sS {IP}
+	-sS: varredura TCP SYN scan
+
+### Identificação de serviço UDP
+módulo: msf6 auxiliary(scanner/discovery/udp_sweep) > run
+	não é uma varredura completa.
+
+### SMB (Server Message Block)
+comumente usado em redes corporativas para compartilhamento de arquivos, impressoras e outros recursos.
+
+módulo: msf6 auxiliary(scanner/smb/smb_version) > run
+
+/usr/share/wordlists/MetasploitRoom/MetasploitWordlist.txt
+
+	
